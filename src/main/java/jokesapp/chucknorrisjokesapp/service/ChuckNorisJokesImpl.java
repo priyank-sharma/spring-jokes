@@ -9,13 +9,12 @@ import guru.springframework.norris.chuck.ChuckNorrisQuotes;
 public class ChuckNorisJokesImpl {
 
 	private ChuckNorrisQuotes chuckNorisQuotes;
-
 	
-	public ChuckNorisJokesImpl() {
+	public ChuckNorisJokesImpl(ChuckNorrisQuotes chuckNorisQuotes) {
 		super();
-		this.chuckNorisQuotes = new ChuckNorrisQuotes();
+		this.chuckNorisQuotes = chuckNorisQuotes;
 	}
-	
+
 	public String getJoke() {
 		
 		return chuckNorisQuotes.getRandomQuote();
