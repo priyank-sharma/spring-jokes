@@ -5,10 +5,10 @@ import org.springframework.context.annotation.Configuration;
 
 import guru.springframework.norris.chuck.ChuckNorrisQuotes;
 
-@Configuration
+//@Configuration
 public class ChuckConfig {
 
-	@Bean
+	//@Bean
 	public ChuckNorrisQuotes ChuckNorrisQuotes() {
 		return new ChuckNorrisQuotes();
 	}
